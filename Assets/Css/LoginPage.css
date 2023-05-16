@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header
+{
+    display: flex;
+    height: 85px;
+    /* background-color: red; */
+}
+.header .logo-brand
+{
+    padding: 10px 20px 0px 25px ;
+    letter-spacing: 2px;
+    color: rgb(231, 86, 69);
+}
+.header .header-title
+{
+    padding-left: 55px;
+    width: 150px;
+    font-size: 25px;
+    line-height: 85px;
+    word-spacing: 5px;
+}
+.breadcrumber
+{
+    height: 50px;
+    width: 100%;
+    /* background-color: gray; */
+}
+.breadcrumber-sub
+{
+    margin: auto;
+    width: 65%;
+    height: 100%;
+   
+    color: black;
+    font-weight: 600;
+}
+.breadcrumber-sub a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+}
+.breadcrumber-sub .nameproduct
+{
+    color: orangered;
+}
+.breadcrumber-sub i
+{
+    font-size: 22px;
+}
+.content
+{
+    height: 500px;
+    background: url(./img/background.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: 400px;
+   
+}
+.content .layout1-content
+{
+    margin: auto;
+    width: 65%;
+    height: 100%;
+}
+.content .layout2-content
+{
+    width: 100%;
+    display: flex;
+}
+.content .form
+{   
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.5);
+    border-radius: 5px 5px;
+    height: 450px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+.group-input
+{
+    padding: 0px 25px;
+}
+.group-input .box1
+{
+    width: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.group-input  .btn
+{
+    width: 253px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700px;
+    background-color: #f54d3a;
+    border-radius: 5px 5px;
+    border: none;
+    color: white;
+}
+.content .form .form-title
+{
+    text-align: center;
+    padding: 15px 0;
+}
+.content .form .register
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    
+}
+.content .form .register .link
+{
+    text-decoration: none;
+    color: rgb(6, 86, 213);
+}
+.content .form .divide
+{
+    position: relative;
+    margin-top: 10px;
+}
+.content .form .divide .line
+{
+    height: 0.5px;
+    margin: auto;
+    width: 250px;
+    background-color: black;
+}
+.content .form .divide .text-devide
+{
+    position: absolute;
+    top: -9px;
+    background-color: rgb(255, 255, 255);
+    left: 120px;
+    color: gray;
+    padding: 0 15px;
+}
+.group-box-other
+{
+    display: flex;
+    padding: 10px 15px;
+    
+}
+.group-box-other img
+{
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+}
+.group-box-other .box-other
+{
+    position: relative;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 2px solid rgb(113, 95, 95);
+    border-radius: 10px 10px;
+}
+.group-box-other .box-other .text
+{
+    font-size: 20px;
+    position: absolute;
+    top: 14px;
+    left: 30px;
+   
+}
+.footer-form
+{
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(107, 104, 104);
+}
+.footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+    background-color: #ffffff;
+    height: 190px;
+    /* border-radius: 10px 10px; */
+    /* background-color: purple; */
+}
+.footer ul{
+    list-style-type: none;
+    margin: 0;
+   
+}
+.footer li{
+    padding-top: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+   
+}
+.footer .col{
+    width: 32%;
+    padding: 10px 0px 0px 15px;
+}
+.footer .col h3
+{
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+}
+.footer .col h3::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    box-sizing: border-box;
+    background-color: #f8119f;
+    bottom: -7px;
+    border-radius: 10px;
+}
+.footer .group3 ul
+{
+    display: flex;
+   
+}
+.footer img
+{
+    width: 40px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 740px) {
+    .footer .col{
+        width: 29%;
+        padding: 10px 0px 0px 10px;
+    }
+    .group-input  .btn
+{
+    width: 253px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700px;
+    background-color: #f53ac9;
+    border-radius: 5px 5px;
+    border: none;
+    color: white;
+}
+.breadcrumber-sub
+{
+    margin: auto;
+    width: 85%;
+    height: 100%;
+   
+    color: black;
+    font-weight: 600;
+}
+.content .form
+{
+    width: 100%;
+}
+.group-input .box1
+{
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+}.group-input  .btn
+{
+    width: 100%;
+}
+.group-box-other 
+{
+    width: 80%;
+    padding: 0;
+}
+.group-box-other .box-other
+{
+    width: 110px;
+}
+}

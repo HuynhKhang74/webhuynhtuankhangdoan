@@ -1,0 +1,552 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Main 
+{
+   
+    padding: 0px 20px;
+    background: linear-gradient( to left bottom,
+    #7c4856 2%,#fdaca8 10%,#CF8BF3 20%,#eb8988 40%,#FBD3E9 60%,#fdaca8 90%
+    );
+    background-size: 400%;
+    animation: anim 3.5s infinite alternate;
+}
+@keyframes anim
+{
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 100%;
+    }
+}
+/* thanh truot */
+::-webkit-scrollbar
+{
+    width:0;
+}
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    border-radius: 10px 10px;
+    border: 3PX SOLID whitesmoke;
+    background: linear-gradient(to left,#23efc3 ,#73e4f3 );
+    animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,#27f349,#16e0e3);
+    filter: blur(30px);
+}
+/* header */
+.header
+{
+    color: white;
+    display: flex;
+    height: 90px;
+    /* background:linear-gradient( to right, #ffffffbc,#f3b4b5b0) ; */
+    justify-content: space-between;
+    align-items: center;
+    /* stick */
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+.logo{
+    color: black;
+    border: 5px #ffc5c3;
+    border-style:inset;
+    
+}
+.logo h1
+{   
+    background: linear-gradient(to right,rgb(72, 73, 77) 10%,rgb(85, 84, 85) 70%,rgba(7, 6, 6, 0.805) 80%);
+    width: 195px;
+    height: 90px;
+    font-weight: 900;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header-sibeb{
+    float: right;
+    display: flex;
+   
+}
+.header-sibeb img{
+    width: 40px;
+}
+.header .header-sibeb a
+{
+    padding: 31px 21px 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #7d1818;
+    /* background: linear-gradient(to top left,rgba(226, 222, 222, 0.778)30%, rgb(255, 255, 255) 60%,rgba(224, 221, 221, 0.658) 90%); */
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    /* border-radius: 40% 0% 40% 5%; */
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.41);
+}
+.header  .header-sibeb .headeritemshost
+{
+    background-color: yellow;
+    color: rgba(248, 16, 16, 0.896);
+}
+.header .header-sibeb a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 8px#000000;
+    height: 100%;
+    background:  linear-gradient(to top left,#cdd2ce88,#ee7bdfc5,#e6f07f86);
+}
+.header .dropdown
+{
+    display: none;
+}
+.content
+{   
+    margin-top: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 700px auto;
+    grid-template-rows: 130px auto 130px 300px;
+    height: 900px;
+    /* background-color: orange; */
+}
+.content-item1
+{
+    background-color: blue;
+    grid-area: 1/1/3/2;
+    background: url(./img/gongcha.jpg);
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    background-position: -290px 0px;
+}
+.content-item2
+{
+    /* background-color: red; */
+    border: 5px solid rgba(248, 248, 248, 0.926);
+    border-radius: 10px 10px ;
+}
+.content-item2 h2
+{
+    font-size: 95px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    line-height: 120px;
+    text-align: center;
+    color: transparent;
+    background-size: 500%;
+    -webkit-text-stroke: 4px rgba(255, 255, 255, 0.262);
+    background: url(./img/back.png);
+    -webkit-background-clip: text;
+    animation: back 20s linear;  
+}
+@keyframes back{
+    to{
+        background-position: 0%;
+    }
+    from{
+        background-position: 100%;
+    }
+}
+.content-item3
+{
+    background-color: #2980B9;
+    grid-area: 2/2/3/3;
+}
+.content-item3 .carousel-indicators{
+    bottom: 0;
+}
+.content-item3 .carousel-inner 
+{   
+    width: 100%;
+    margin: 0;
+}
+.content-item3 img {
+    height: 320px;
+    width: 200px;
+}
+.content-item4
+{
+  
+    background-color: rgba(147, 147, 147, 0.204);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    width: 100%;
+    grid-area: 3/1/4/3;
+    /* background-color: #293033; */
+    transition: width 2s,height 3s, transfrom 2s;
+}
+.content-item4 p
+{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+}
+.content-item4 .p2
+{
+    font-size: 20px;
+    line-height: 20px;
+}
+.content-item4 img
+{
+    width: 130px;
+    height: 130px;
+    opacity: 1;
+    
+}
+.content-item4 img:hover
+{
+    width: 130px;
+    height: 130px;
+    opacity: 1;
+    transform: translate(500px);
+ 
+}
+.content-item5
+{
+    margin: auto;
+    display: flex;
+    grid-area: 4/1/4/3;
+    /* background-color: black; */
+}
+.content-item5 .AboutCake
+{
+    margin: 0 25px;
+    border-radius: 20px 20px;
+    width: 250px;
+    height: 100%;
+    border: 2px solid rgba(90, 88, 88, 0.355);
+    background-color: rgb(249, 249, 249);
+    justify-content: space-between;
+    text-align: center;
+}
+.content-item5 .AboutCake img
+{
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-news
+{
+    height: 600px;
+
+}
+.content-news .picture
+{
+    float: left;
+}
+.content-news .picture img
+{
+    height: 550px;
+}
+.settime
+{
+    display: flex;
+    margin-left: 310px;
+    justify-content: space-between;
+}
+.boxtime
+{
+    width: 60px;
+    height: 65px;
+    background-color: #fdecf3;
+    text-align: center;
+    color: #d22279;
+    font-weight: 700;
+    justify-content: center;
+    border-radius:0% 0px 10px 10px;
+}
+.boxtime_number
+{
+    font-size: 27px;
+}
+.content-news .new
+{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 25px 25px ;
+    width: 60%;
+    position: relative;
+}
+.content-news .new .title_new
+{
+    font-weight: 800;
+    color: rgb(41, 76, 214);
+    font-size: 30px;
+    width: 300px;
+    border-bottom: 3.5px solid #f8119f;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content-news .new_sub
+{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px 10px;
+}
+.content-news .new_sub img
+{
+    width: 100px;
+    height: 100px;
+}
+.content-news .new_sub a
+{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.content-news .new_sub a :hover
+{
+    color: #f8119f;
+}
+.content-news .daisu img
+{
+    width: 520px;
+    height: 660px;
+    position: absolute;
+    bottom: -350px;
+    right:-200px;
+}
+.footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+    background-color: #ffffff;
+    height: 150px;
+    border-radius: 10px 10px;
+    /* background-color: purple; */
+}
+.footer ul{
+    list-style-type: none;
+    margin: 0;
+   
+}
+.footer li{
+    padding-top: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+   
+}
+.footer .col{
+    width: 33%;
+    padding: 10px 0px 0px 25px;
+}
+.footer .col h3
+{
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+}
+.footer .col h3::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    box-sizing: border-box;
+    background-color: #f8119f;
+    bottom: -7px;
+    border-radius: 10px;
+}
+.footer .group3 ul
+{
+    display: flex;
+   
+}
+.footer img
+{
+    width: 40px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 740px)  {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .Main
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .header .headeritems
+    {
+        display: none;
+    }
+    .header .headeritemshost
+    {
+        display: none;
+    }
+    .logo h1
+{   
+    background: linear-gradient(to right,rgb(144, 161, 229) 10%,rgb(255, 255, 255) 70%,rgba(207, 76, 76, 0.805) 80%);
+    width: 195px;
+    height: 90px;
+    font-weight: 900;
+    letter-spacing: 7px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header .dropdown
+{
+    display: block;
+}
+.content
+{   
+    margin-top: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 0px 95%;
+    grid-template-rows: 130px auto 230px 300px;
+    height: 900px;
+    /* background-color: orange; */
+}
+.content-item5
+{
+    margin-top: 50px;
+}
+.content-item5 .number3.AboutCake
+{
+ display: none;
+}
+.content-item5 .number4.AboutCake
+{
+ display: none;
+}
+.content-news
+{
+    height: 1280px;
+}
+.content-news .new
+{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 25px 25px ;
+    width: 100%;
+    position: relative;
+}
+.content-news .daisu img
+{
+    display: none;
+}
+.picture
+{
+    margin-left:80px;
+}
+.content-item3
+{
+    background-color: #2980B9;
+    grid-area: 2/2/3/3;
+    width: 100%;
+    height: 100px;
+}
+.content-news .picture
+{
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 100px;
+}
+.content-news .picture img
+{
+    width: 65%;
+    height: auto;
+    margin-left: none;
+}
+.settime
+{
+    display: flex;
+    margin-left: 0px;
+    justify-content: left;
+    width: 65%;
+}
+.content-item5
+{
+    margin: auto;
+    display: flex;
+    grid-area: 4/1/4/3;
+    width: 100%;
+    /* background-color: black; */
+}
+.content-item5 .AboutCake
+{
+    margin: 0 25px;
+    border-radius: 20px 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(90, 88, 88, 0.355);
+    background-color: rgb(249, 249, 249);
+    justify-content: space-between;
+    text-align: center;
+}
+.content-item5 .AboutCake img
+{
+    width: 65%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+    background-color: #ffffff;
+    height: 240px;
+    border-radius: 10px 10px;
+    /* background-color: purple; */
+}
+
+}
+

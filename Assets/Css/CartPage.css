@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* thanhtruot */
+::-webkit-scrollbar
+{
+    width:0;
+}
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    border-radius: 10px 10px;
+    border: 3PX SOLID whitesmoke;
+    background: linear-gradient(to left,#23efc3 ,#73e4f3 );
+    animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,#27f349,#16e0e3);
+    filter: blur(30px);
+}
+.header
+{
+    display: flex;
+    height: 85px;
+    /* background-color: red; */
+}
+.header .logo-brand
+{
+    padding: 10px 20px 0px 25px ;
+    letter-spacing: 2px;
+    color: rgb(231, 86, 69);
+}
+.header .header-title
+{
+    padding-left: 55px;
+    width: 250px;
+    font-size: 25px;
+    line-height: 85px;
+    word-spacing: 5px;
+}
+.breadcrumber
+{
+    height: 50px;
+    width: 100%;
+    /* background-color: gray; */
+}
+.breadcrumber-sub
+{
+    margin: auto;
+    width: 65%;
+    height: 100%;
+   
+    color: black;
+    font-weight: 600;
+}
+.breadcrumber-sub a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+}
+.breadcrumber-sub .nameproduct
+{
+    color: orangered;
+}
+.breadcrumber-sub i
+{
+    font-size: 22px;
+}
+.content{
+    height: 600px;
+    background-color: #f5f5f5;
+}
+.content .group-list
+{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+.content .group-list .box1
+{
+    background-color: rgb(255, 255, 255);
+    color: #00bfa5;
+    padding: 10px 5px;
+    border: 2px solid rgb(15, 215, 8);
+    border-radius: 5px 5px;
+}
+.content .group-list .box2
+{
+    display: flex;
+    margin-top: 20px;
+    background-color: rgb(248, 131, 213);
+    height: 50px;
+    align-items: center;
+}
+.content .group-list .box2 .input-box2
+{
+    width: 50px;
+}
+.content .group-list .box2 .name
+{
+    width: 450px;
+}
+.content .group-list .box2 .bill
+{
+    width: 150px;
+    text-align: center;
+}
+.content .group-list .box2 .number
+{
+    width: 150px;
+    text-align: center;
+}
+.content .group-list .box2 .change
+{
+    width: 150px;
+    text-align: center;
+}
+.content .group-list .box3
+{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    align-items: center;
+}
+.content .group-list .box3 .input-box2
+{
+    width: 50px;
+}
+.content .group-list .box3 .name
+{
+    display: flex;
+    width: 450px;
+}
+.content .group-list .box3 .name img
+{
+    width: 50px;
+    height: 50px;
+}
+.content .group-list .box3 .name-product
+{
+    line-height: 50px;
+}
+.content .group-list .box3 .bill
+{
+    width: 150px;
+    text-align: center;
+}
+.content .group-list .box3 .number
+{
+    width: 150px;
+    text-align: center;
+}
+.content .group-list .box3 .change
+{
+    width: 150px;
+    text-align: center;
+}
+.content .group-list .line
+{
+    height: 1px;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(106, 80, 67, 0.596);
+}
+.content .Total
+{
+    background-color: white;
+    padding: 10px;
+    height: 220px;
+    position: relative;
+}
+.content .Total div
+{
+    margin-bottom: 9px;
+}
+.content .Total .ship
+{
+    text-decoration: line-through;
+    color: gray;
+}
+.content .Total .note .textarea
+{
+    border: 5px solid rgba(236, 36, 113, 0.688);
+    padding: 10px;
+    border-radius: 10px 10px;
+}
+.content .Total .btn
+{
+    padding-left: 680px;
+}
+.content .Total .btn1
+{
+    height: 40px;
+    width: 180px;
+    font-size: 25px;
+    background-color: pink;
+    border: 2px solid rgb(226, 18, 52);
+    cursor: pointer;
+    color: #f8119f;
+    font-weight: 700;
+    word-spacing: 5px;
+    border-radius: 10px 10px;
+    position: absolute;
+    top: 180px;
+}
+.content .Total .btn1:hover
+{
+    background-color: #f8119f;
+    color: #eed1e4;
+}
+.footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+    background-color: #ffffff;
+    height: 190px;
+    /* border-radius: 10px 10px; */
+    /* background-color: purple; */
+}
+.footer ul{
+    list-style-type: none;
+    margin: 0;
+   
+}
+.footer li{
+    padding-top: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+   
+}
+.footer .col{
+    width: 32%;
+    padding: 10px 0px 0px 15px;
+}
+.footer .col h3
+{
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+}
+.footer .col h3::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    box-sizing: border-box;
+    background-color: #f8119f;
+    bottom: -7px;
+    border-radius: 10px;
+}
+.footer .group3 ul
+{
+    display: flex;
+   
+}
+.footer img
+{
+    width: 40px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 740px) {
+    .content .group-list
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+.footer .col{
+    width: 30%;
+    padding: 10px 0px 0px 10px;
+}
+.content .Total
+{
+    background-color: rgba(238, 165, 231, 0.834);
+    padding: 10px;
+    height: 300px;
+    position: relative;
+}
+.content .Total .btn
+{
+    padding-left: 150px;
+}
+.content{
+    height: 700px;
+    background-color: #f5f5f5;
+}
+.content .Total .btn1
+{
+    height: 40px;
+    width: 180px;
+    font-size: 25px;
+    background-color: pink;
+    border: 2px solid rgb(226, 18, 52);
+    cursor: pointer;
+    color: #f8119f;
+    font-weight: 700;
+    word-spacing: 5px;
+    border-radius: 10px 10px;
+   position: absolute;
+   top: 260px;
+}
+.header .header-title
+{
+    padding-left: 0px;
+    width: 250px;
+    font-size: 25px;
+    line-height: 85px;
+    word-spacing: 5px;
+}
+.breadcrumber-sub
+{
+    margin: auto;
+    width: 75%;
+    height: 100%;
+   
+    color: black;
+    font-weight: 600;
+}
+.content .group-list .box3 .name-product h3
+{
+    line-height: 50px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+#progressbar
+{  
+    width: 10px;
+}
+}

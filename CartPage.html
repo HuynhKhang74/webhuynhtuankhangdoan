@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Css/CartPage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>CartPage</title>
+    <link rel="shortcut icon" type="x-icon" href="./Assets/Css/img/hongtrasua.webp">
+</head>
+<body>
+    <div id="progressbar"></div>
+      <div id="scrollPath"> </div>
+    <div class="header">
+        <div class="logo-brand">
+            <h1>HUYNH <br>  KHANG</h1>
+        </div>
+        <div class="header-title">
+            Giỏ hàng 
+        </div>
+    </div>
+    <hr>
+</div>
+<div class="breadcrumber">
+   <div class="breadcrumber-sub">
+      <a href="./Homepage.html"><i class='bx bxs-home' ></i></a>
+      <i class='bx bx-chevron-right'></i>
+     <a href="./LoginPage.html"><span> Khách hàng  </span></a>
+     <i class='bx bx-chevron-right'></i>
+     <span class="nameproduct">Giỏ hàng</span>
+   </div>
+   <div class="content">
+    <div class="group-list">
+        <div class="box1">
+            <i class='bx bx-package'></i> <span>Mua với hóa đơn trên 50.000đ sẽ được tặng mã giảm giá miễn phí vận chuyển bạn nhé!</span>
+        </div>
+        <div class="box2">
+            <div> <input class="input-box2" type="checkbox" name="" id=""></div>
+            <div class="name">Sản phẩm</div>
+            <div class="bill">Đơn giá</div>
+            <div class="number">Số lượng</div>
+            <div class="change">Thao tác</div>
+        </div>
+        <div class="group-product">
+            <div class="box3">
+                <div> <input class="input-box2" type="checkbox" name="" id=""></div>
+                <div class="name">
+                    <img src="./Assets/Css/img/1669737919_hi-tea-dao_e44d8e9b06124e0591b15546b1637861.webp" alt="">
+                    <div class="name-product">
+                        <h3>trà đào cam </h3>
+                    </div> 
+                </div>
+                <div class="bill">35.000đ</div>
+                <div class="number">1</div>
+                <div class="change"><button>xóa</button></div>
+            </div>
+            <div class="line"></div>
+            <div class="box3">
+                <div> <input class="input-box2" type="checkbox" name="" id=""></div>
+                <div class="name">
+                    <img src="./Assets/Css/img/hongtrasua.webp" alt="">
+                    <div class="name-product">
+                        <h3> hồng trà kem</h3>
+                    </div> 
+                </div>
+                <div class="bill">30.000đ</div>
+                <div class="number">1</div>
+                <div class="change"> <button>xóa</button></div>
+            </div>
+            <div class="line"></div>
+            <div class="box3">
+                <div> <input class="input-box2" type="checkbox" name="" id=""></div>
+                <div class="name">
+                    <img src="./Assets/Css/img/tradaocamsa.webp" alt="">
+                    <div class="name-product">
+                        <h3> trà đào cam </h3>
+                    </div> 
+                </div>
+                <div class="bill">70.000đ</div>
+                <div class="number">2</div>
+                <div class="change"><button>xóa</button></div>
+            </div>
+        </div>
+        <div class="Total">
+            <div>Phí vận chuyển: <span class="ship">15.000đ</span> </div>
+            <div>Tổng tiền: 135.000đ </div>
+            <div>Giao hàng đến: 140/Lê Trọng Tấn Phường Tây Thạnh Q.Tân PHú TP.Hồ Chí Minh</div>
+            <div>Ghi chú</div>
+            <div class="note">
+                <textarea class="textarea" placeholder="Bạn nhắn nhủ điều gì nè..." name="" id="" cols="55" rows="5"></textarea>
+            </div>
+            <div class="btn"> <button class="btn1">Mua ngay</button></div>
+        </div>
+    </div>
+   </div>
+   
+    <div class="footer">
+        <div class="col group1">
+          <h3>Danh mục</h3>
+          <ul>
+            <li><a href="./Homepage.html">Trang chủ</a></li>
+            <li><a href="./index.html">Thông tin</a></li>
+            <li><a href="./ListPage.html">Sản phẩm</a></li>
+          </ul>
+        </div>
+        <div class="col group2">
+          <h3>Thực hiện:</h3>
+          <ul>
+            <li>Huỳnh Tuấn Khang</li>
+            <li>2001215849</li>
+            <li>12DHTH11</li>
+          </ul>
+        </div>
+        <div class="col group3">
+          <h3>Liên hệ</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/huynh.khang.1694/"><img src="./Assets/Css/img/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/huynhkhang.0704/"><img src="./Assets/Css/img/instagram.png" alt=""></a></li>
+          </ul>
+        </div>
+        
+     </div>
+  </div>
+  <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) *100;
+      progress.style.height = progressHeight + "%";
+    }
+  </script>
+</body>
+</html>

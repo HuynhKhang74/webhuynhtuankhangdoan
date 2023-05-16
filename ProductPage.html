@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductPage</title>
+    <link rel="shortcut icon" type="x-icon" href="./Assets/Css/img/hongtrasua.webp">
+    <link rel="stylesheet" href="./Assets/Css/ProductPage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <div id="progressbar"></div>
+  <div id="scrollPath"> </div>
+    <div class="header">
+        <div class="logo">
+          <h1>Huynh Khang</h1>
+        </div>
+        <nav class="header-sibeb">
+           <div class="headersub"><a class="headeritemshost" href="./index.html">Trang chủ</a> </div>
+           <div class="headersub"><a class="headeritems" href="./InfoPage.html">Thông tin</a></div>
+           <div class="headersub"><a class="headeritems" href="./ListPage.html">Sản phẩm</a></div>
+           <div class="headersub"><a class="headeritems" href="./LoginPage.html">Tài khoản
+            <i class='bx bxs-user'></i>
+           </a></div>
+           <div class="dropdown2 dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class='bx bx-food-menu'></i>
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="./Homepage.html">Trang chủ</a></li>
+              <li><a class="dropdown-item" href="./index.html">thông tin</a></li>
+              <li><a class="dropdown-item" href="./ListPage.html">sản phẩm</a></li>
+              <li><a class="dropdown-item" href="./CartPage.html">giỏ hàng</a></li>
+              <li><a class="dropdown-item" href="./LoginPage.html">tài khoản</a></li>
+            </ul>
+          </div>
+           <div class="headersub"><a class="headeritems" href="https://www.facebook.com/huynh.khang.1694/"><img src="./Assets/Css/img/facebook.png" alt=""></a></div>
+           <div class="headersub"><a class="headeritems" href="https://www.instagram.com/huynhkhang.0704/"><img src="./Assets/Css/img/instagram.png" alt=""></a></div>
+        </nav>
+     </div>
+     <!-- cay tim kiem -->
+    </div>
+     <div class="breadcrumber">
+        <div class="breadcrumber-sub">
+           <a href="./HomePage.html"><i class='bx bxs-home' ></i></a>
+           <i class='bx bx-chevron-right'></i>
+          <a href="./ListPage.html"><span> Sản phẩm  </span></a>
+          <i class='bx bx-chevron-right'></i>
+          <a href=""><span>Các loại trà</span></a>
+          <i class='bx bx-chevron-right'></i>
+          <span class="nameproduct">Trà đào cam sả</span>
+        </div>
+     
+     </div>
+     <div class="content">
+      
+        <div class="content-product">
+          <!-- hinh anh -->
+            <div class="picture-small">
+             <img src="./Assets/Css/img/tradaocamsa.webp " alt="">
+             <div class="img-number2">
+              <img src="./Assets/Css/img/quan.jpg" class="img2" alt="">
+              <img src="./Assets/Css/img/quan.jpg" class="img2" alt="">
+              <img src="./Assets/Css/img/quan.jpg" class="img2" alt="">
+             </div>
+            </div>
+          <!-- thongtin -->
+            <div class="content-information">
+              <h1 class="title">Thông tin sản phẩm</h1>
+              <h1 class="info">Trà đào cam sả</h1>
+              <p class="info-text">
+                Thức uống mang hương vị của đào, của sả, của trà đen đầy thanh mát cho tất cả các thành viên trong dịp đồ án thiết kế Web này. An lành, thư thái và đậm đà chính là những gì tôi mong muốn gửi trao đến bạn và gia đình.
+              </p>
+              <div class="numbermoney-star">
+                <span class="info">35.000đ</span>
+                <span class="star">&starf;&starf;&starf;&starf;&starf;</span>
+                <span class="Buy">(999+ Lượt mua)</span>
+              </div>
+              
+              <div class="btn"> 
+                <button class="btn1 btn-decrement">-</button>
+                <input type="text" id="quantity" class="btn-input" value="1">
+                <button class="btn1 btn-increment">+</button>
+
+                <div class="total-amount">
+                  <span class="tongtien">Tổng tiền:</span>
+                  <span class="total-price">
+                   <span><i class='bx bx-money' ></i></span>
+                   <span id ="price">35.000đ</span>
+                  </span>
+                </div>
+                <a href="./CartPage.html"><button class="Pay">Thanh toán</button></a> 
+              </div>
+              <div>
+                <a class="cart-link" href="./CartPage.html">
+                  <div class="cart">
+                    <i class='bx bxs-cart'></i>
+                    <p> giỏ hàng</p>
+                  </div>
+                </a>
+                
+              </div>
+              
+            </div> 
+        </div>
+        <!-- danh gia san pham -->
+        <div class="About-product">
+          <div class="Main-rating">
+            <div class="product-rating">
+              <h3>Đánh giá sản phẩm</h3>
+            </div>
+            <div class="product-rating-overview">
+              <div  class="product-rating-overview_briefing">
+                <span class="rating-score">4.9</span>
+                <span class="rating-score-out-of">trên 5</span>
+                <p class="star-rating">&starf;&starf;&starf;&starf;&starf;</p>
+              </div>
+              <div class="product-rating-overview_filter">
+                  <div class="box-rating"><h3>Tất cả</h3></div>
+                  <div class="box-rating"><h3>5 sao (1k)</h3></div>
+                  <div class="box-rating"><h3>4 sao (32)
+                  </h3></div>
+              </div>
+            </div>
+            <div class="group-review-customer">
+              <div class="avatar">
+                  
+              </div>
+              <div class="content-review">
+                  <p class="name-author">
+                    Bùi Quốc Bảo
+                  </p>
+                  <p class="star-rating">&starf;&starf;&starf;&starf;&starf;</p>
+                  <p class="date-time"> 
+                    2023-04-01 08:36 | Phân loại hàng: Trà đào cam sả.
+                  </p>
+                  <div>
+                    <h3 class="review">
+                        Tôi chưa bao giờ uống loại trà đào nào ngon như này. Chủ shop quá đáng yêu, nhiệt tình, món thức uống thật tuyệt. Tôi sẽ ủng hộ 1000 lần nữa.
+                        <img class="icon-text" src="./Assets/Css/img/icon.png" alt="">
+                    </h3>
+                  </div>
+                  <div class="picture-review">
+                    <img src="./Assets/Css/img/chupsanpham.webp" alt="">
+                    <img src="./Assets/Css/img/chupsanpham2.webp" alt="">
+                  </div>
+                  <div class="request">
+                    <h3>Phản hồi của shop</h3>
+                    <p>Ôi cảm ơn bạn baobaoshop nhiều lắm, mình sẽ gửi bạn phiếu giảm giá 15% cho những lần tới 
+                      <br>
+                      + Đừng quên tiếp tục ủng hộ shop của bọn mình nhé !
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+       
+        </div>
+        <!-- các sản phẩm khác -->
+        <div class="product-more">
+          <div class="group-card">
+            <div class="card">
+                <img src="./Assets/Css/img/tradaocamsa.webp" alt="">
+                <h3>Trà đào cam sả</h3>
+                <div class="sub-card"><span>35.000đ</span>
+                  <span class="star">&starf;&starf;&starf;&starf;&starf;</span>
+                </div>
+               <a href="./ProductPage.html" class="link-muangay"><input type="button" class="btn" value="MUA NGAY"></a> 
+  
+            </div>
+            <div class="card">
+              <img src="./Assets/Css/img/hongtrasua.webp" alt="">
+              <h3>Hồng trà sữa</h3>
+              <div class="sub-card"><span>30.000đ</span>
+                <span class="star">&starf;&starf;&starf;&starf;&starf;</span>
+              </div>
+             <a href="" class="link-muangay"><input type="button" class="btn" value="MUA NGAY"></a> 
+
+          </div>
+
+          <div class="card">
+            <img src="./Assets/Css/img/tradaocamsa.webp" alt="">
+            <h3>Trà đào cam sả</h3>
+            <div class="sub-card"><span>35.000đ</span>
+              <span class="star">&starf;&starf;&starf;&starf;&starf;</span>
+            </div>
+           <a href="./ProductPage.html" class="link-muangay"><input type="button" class="btn" value="MUA NGAY"></a> 
+
+        </div>
+        <div class="card">
+          <img src="./Assets/Css/img/hongtrasua.webp" alt="">
+          <h3>Hồng trà sữa</h3>
+          <div class="sub-card"><span>30.000đ</span>
+            <span class="star">&starf;&starf;&starf;&starf;&starf;</span>
+          </div>
+         <a href="" class="link-muangay"><input type="button" class="btn" value="MUA NGAY"></a> 
+
+      </div>
+      <div class="card">
+        <img src="./Assets/Css/img/tradaocamsa.webp" alt="">
+        <h3>Trà đào cam sả</h3>
+        <div class="sub-card"><span>35.000đ</span>
+          <span class="star">&starf;&starf;&starf;&starf;&starf;</span>
+        </div>
+       <a href="./ProductPage.html" class="link-muangay"><input type="button" class="btn" value="MUA NGAY"></a> 
+
+    </div>
+    <div class="card">
+      <img src="./Assets/Css/img/hongtrasua.webp" alt="">
+      <h3>Hồng trà sữa</h3>
+      <div class="sub-card"><span>30.000đ</span>
+        <span class="star">&starf;&starf;&starf;&starf;&starf;</span>
+      </div>
+     <a href="" class="link-muangay"><input type="button" class="btn" value="MUA NGAY"></a> 
+
+  </div>
+      
+        </div>
+        
+     </div>
+     <div class="footer">
+        <div class="col group1">
+          <h3>Danh mục</h3>
+          <ul>
+          <li><a href="./Homepage.html">Trang chủ</a></li>
+          <li><a href="./index.html">Thông tin</a></li>
+          <li><a href="./ListPage.html">Sản phẩm</a></li>
+          <li><a href="./CartPage.html">Giỏ hàng</a></li>
+          <li><a href="./LoginPage.html">Tài khoản</a></li>
+          </ul>
+        </div>
+        <div class="col group2">
+          <h3>Thực hiện:</h3>
+          <ul>
+            <li>Huỳnh Tuấn Khang</li>
+            <li>2001215849</li>
+            <li>12DHTH11</li>
+          </ul>
+        </div>
+        <div class="col group3">
+          <h3>Liên hệ</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/huynh.khang.1694/"><img src="./Assets/Css/img/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/huynhkhang.0704/"><img src="./Assets/Css/img/instagram.png" alt=""></a></li>
+          </ul>
+        </div>    
+    </div>
+    <script type="text/javascript">
+      let progress = document.getElementById('progressbar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) *100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+    <script src="./ProductPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
